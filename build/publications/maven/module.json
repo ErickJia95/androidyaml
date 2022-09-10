@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.yb.siteplugin",
+    "module": "ybPlugin",
+    "version": "1.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ybsiteplugin-0.0.0.4.0.jar",
+          "url": "ybsiteplugin-0.0.0.4.0.jar",
+          "size": 13501,
+          "sha512": "7a9cea44fcb3fc91d3c81f1639b3f3a20281614659acb8d61c68c7d554dcf5ea841f915bc6846d3d6a4271af2002a08b7adfebdbfb4bf5402927f359a5d85bc7",
+          "sha256": "b08291b01baeb075db3ad53d54d5438e3f049010d4fc0e383199d4e189935215",
+          "sha1": "6d5a61aa526786a03555d428a0952d4d2d536231",
+          "md5": "99cee1e1ac5097d1e7fff2eb14c35c55"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.groovy",
+          "module": "groovy",
+          "version": {
+            "requires": "4.0.4"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-yaml",
+          "version": {
+            "requires": "2.13.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ybsiteplugin-0.0.0.4.0.jar",
+          "url": "ybsiteplugin-0.0.0.4.0.jar",
+          "size": 13501,
+          "sha512": "7a9cea44fcb3fc91d3c81f1639b3f3a20281614659acb8d61c68c7d554dcf5ea841f915bc6846d3d6a4271af2002a08b7adfebdbfb4bf5402927f359a5d85bc7",
+          "sha256": "b08291b01baeb075db3ad53d54d5438e3f049010d4fc0e383199d4e189935215",
+          "sha1": "6d5a61aa526786a03555d428a0952d4d2d536231",
+          "md5": "99cee1e1ac5097d1e7fff2eb14c35c55"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+group 'org.yb.siteplugin'
+version '1.1.0'
+
+gradlePlugin {
+    plugins {
+        ybPlugin {
+            id = 'bob-site-plugin'
+            implementationClass = 'JPlugin'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.4'
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.13.4'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
+
+task generateSourcesJar(type: Jar) {
+    from  sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+
+
+
+
+
+afterEvaluate {
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId = 'com.bob.bw'
+                artifactId = 'ybsiteplugin'
+                version = '0.0.0.4.0'
+                from components.java
+                artifact generateSourcesJar
+            }
+        }
+        repositories {
+            maven {
+                url = "http://47.242.78.82:8081/repository/bob/"
+                allowInsecureProtocol true
+                credentials {
+                    username "admin"
+                    password "bob123456."
+                }
+            }
+        }
+    }
+}

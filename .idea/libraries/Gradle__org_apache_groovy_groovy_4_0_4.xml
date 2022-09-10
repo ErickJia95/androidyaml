@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.groovy:groovy:4.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.4.2-bin/caches/modules-2/files-2.1/org.apache.groovy/groovy/4.0.4/1199db7007c16a37dd5fdba3163b86f290460a/groovy-4.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.4.2-bin/caches/modules-2/files-2.1/org.apache.groovy/groovy/4.0.4/890ca81fe9c39d0284be52299ea23c9f8d2326c9/groovy-4.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

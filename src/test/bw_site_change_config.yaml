@@ -1,0 +1,13 @@
+# 站点配置
+sites:
+  - { whichPro : "y0_sport" , appName : "亚博体育" , appKey : "t7ylri" , appType : "4001"}
+  - { whichPro : "y0_all" , appName : "亚博" , appKey : "tjmj6g" , appType : "4001"}
+  - { whichPro : "y1_sport" , appName : "爱游戏体育" , appKey : "tsaz3n" , appType : "1001"}
+  - { whichPro : "y1_all" , appName : "爱游戏" , appKey : "t06fut" , appType : "1001"}
+  - { whichPro : "y2_sport" , appName : "乐鱼体育" , appKey : "tps0ie" , appType : "2001"}
+  - { whichPro : "y2_all" , appName : "乐鱼" , appKey : "tqnc02" , appType : "2001"}
+  - { whichPro : "y3_sport" , appName : "华体会体育" , appKey : "t279ql" , appType : "3001"}
+  - { whichPro : "y3_all" , appName : "华体会" , appKey : "tg7ooa" , appType : "3001"}
+  - { whichPro : "y4_sport" , appName : "开云体育" , appKey : "tml0cj" , appType : "7001"}
+  - { whichPro : "y4_all" , appName : "开云" , appKey : "tvhaqf" , appType : "7001"}
+
