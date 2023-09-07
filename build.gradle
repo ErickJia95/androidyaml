@@ -9,7 +9,7 @@ version '2.0.0'
 
 gradlePlugin {
     plugins {
-        ybPlugin {
+        adPlugin {
             id = 'com.daindian.pluginforad'
             implementationClass = 'JPlugin'
         }
