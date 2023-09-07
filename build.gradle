@@ -4,13 +4,13 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.yb.siteplugin'
+group 'org.ads.plugin'
 version '1.1.0'
 
 gradlePlugin {
     plugins {
         ybPlugin {
-            id = 'bob-site-plugin'
+            id = 'ads-plugin'
             implementationClass = 'JPlugin'
         }
     }
@@ -50,8 +50,8 @@ afterEvaluate {
     publishing {
         publications {
             maven(MavenPublication) {
-                groupId = 'com.bob.bw'
-                artifactId = 'ybsiteplugin'
+                groupId = 'com.erick.bw'
+                artifactId = 'adplugin'
                 version = '0.0.0.5.0'
                 from components.java
                 artifact generateSourcesJar
