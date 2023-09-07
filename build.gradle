@@ -10,7 +10,7 @@ version '1.1.0'
 gradlePlugin {
     plugins {
         ybPlugin {
-            id = 'ad-plugin'
+            id = 'adplugin'
             implementationClass = 'JPlugin'
         }
     }
@@ -50,21 +50,23 @@ afterEvaluate {
     publishing {
         publications {
             maven(MavenPublication) {
-                groupId = 'com.erick.bw'
-                artifactId = 'adplugin'
-                version = '0.0.0.5.0'
+//                groupId = 'com.erick.bw'
+//                artifactId = 'adplugin'
+//                version = '0.0.0.5.0'
+                artifactId = 'com.diandian.ad.plugin'
                 from components.java
                 artifact generateSourcesJar
             }
         }
         repositories {
             maven {
-                url = "http://localhost:8081/repository/bob/"
-                allowInsecureProtocol true
-                credentials {
-                    username "admin"
-                    password "Aini1314!!"
-                }
+//                url = "http://localhost:8081/repository/bob/"
+//                allowInsecureProtocol true
+//                credentials {
+//                    username "admin"
+//                    password "Aini1314!!"
+//                }
+                url = uri('../repo')
             }
         }
     }
