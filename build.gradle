@@ -4,13 +4,13 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.ad.plugin'
-version '1.1.0'
+group 'com.daindian.pluginforad'
+version '2.0.0'
 
 gradlePlugin {
     plugins {
         ybPlugin {
-            id = 'adplugin'
+            id = 'com.daindian.pluginforad'
             implementationClass = 'JPlugin'
         }
     }
@@ -53,7 +53,9 @@ afterEvaluate {
 //                groupId = 'com.erick.bw'
 //                artifactId = 'adplugin'
 //                version = '0.0.0.5.0'
-                artifactId = 'com.diandian.ad.plugin'
+                groupId = 'com.diandian.plugin'
+                version = '2.0.0'
+                artifactId = 'forad'
                 from components.java
                 artifact generateSourcesJar
             }
